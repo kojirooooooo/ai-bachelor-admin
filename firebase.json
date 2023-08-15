@@ -1,0 +1,26 @@
+{
+  "hosting": [
+    {
+      "target": "ai-bachelor-prod-admin",
+      "public": "dist/ai-bachelor-admin",
+      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    },
+    {
+      "target": "ai-bachelor-dev-admin",
+      "public": "dist/ai-bachelor-admin",
+      "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}
