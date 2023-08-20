@@ -1,0 +1,12 @@
+<main class="form-signin">
+  <form #f="ngForm" (submit)="signIn()">
+    <h1 class="h3 mb-3">CD34-Learning管理画面</h1>
+    <label for="inputEmail" class="sr-only mb-1">メールアドレス</label>
+    <input type="email" [(ngModel)]="login.email" name="email" id="inputEmail" class="form-control mb-3"
+      placeholder="Emailアドレス" required autofocus>
+    <label for="inputPassword" class="sr-only mb-1">パスワード</label>
+    <input type="password" [(ngModel)]="login.password" name="password" id="inputPassword" class="form-control mb-3"
+      placeholder="パスワード" required>
+    <button class="w-100 btn btn-lg btn-primary" type="submit" [disabled]="!f.form.valid || loading">サインイン</button>
+  </form>
+</main>

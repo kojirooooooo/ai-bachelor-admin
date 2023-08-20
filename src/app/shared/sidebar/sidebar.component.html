@@ -1,0 +1,47 @@
+<div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+  <a href="/" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+    <span class="fs-5 d-none d-sm-inline">AIバチェラー(仮)管理画面</span>
+  </a>
+  <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start">
+    <li class="nav-item">
+      <a href="/" class="nav-link align-middle px-0">
+        <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">ダッシュボード</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="/article/list/1" class="nav-link align-middle px-0">
+        <i class="fs-4 bi-stickies"></i> <span class="ms-1 d-none d-sm-inline">記事管理</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="/live/list/1" class="nav-link align-middle px-0">
+        <i class="fs-4 bi-camera-reels"></i> <span class="ms-1 d-none d-sm-inline">ライブ管理</span>
+      </a>
+    </li>
+    <li>
+      <a href="#users" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+        <i class="fs-4 bi-people-fill"></i> <span class="ms-1 d-none d-sm-inline">ユーザー管理</span> </a>
+      <ul class="collapse nav flex-column ms-1" id="users" data-bs-parent="#menu">
+        <li class="w-100">
+          <a href="/user/new-user" class="nav-link px-0"> <span class="d-none d-sm-inline">新規ユーザー登録</span></a>
+        </li>
+        <li>
+          <a href="/user/parent-user-list/1" class="nav-link px-0"> <span class="d-none d-sm-inline">親ユーザーリスト</span></a>
+        </li>
+        <li>
+          <a href="/user/child-user-list/1" class="nav-link px-0"> <span class="d-none d-sm-inline">子ユーザーリスト</span></a>
+        </li>
+        <li>
+          <a href="/user/admin-user-list/1" class="nav-link px-0"> <span
+              class="d-none d-sm-inline">管理者ユーザーリスト</span></a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <hr>
+
+  <ul class="nav nav-pills text-small shadow">
+    <li class="nav-item mb-3"><a class="logOut" (click)="logOut()">ログアウト</a></li>
+  </ul>
+
+</div>
